@@ -60,5 +60,14 @@ hairCutForm.addEventListener('submit', function(event){
 
 
 //Create Account
+let createAccountForm = document.querySelector("#createAccountForm");
+let userName = document.querySelector('#userName');
+let email = document.querySelector('#email');
+let passwordOne = document.querySelector('#password-1');
+let passwordTwo = document.querySelector('#password-2');
+
+createAccountForm.addEventListener('submit',function(event){
+    event.preventDefault();
+})
 
 
