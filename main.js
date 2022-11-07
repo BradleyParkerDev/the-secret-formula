@@ -58,3 +58,7 @@ hairCutForm.addEventListener('submit', function(event){
     longHairRadio.checked = true;
 })
 
+
+//Create Account
+
+
