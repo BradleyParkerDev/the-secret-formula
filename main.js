@@ -1,3 +1,4 @@
+//Alert Form
 let alertForm = document.querySelector('#alertForm');
 let alertInput = document.querySelector('#alertInput');
 
@@ -8,12 +9,11 @@ alertForm.addEventListener('submit', function(event){
     
 })
 
-let sandwichForm = document.querySelector('#sandwichForm');
 
+//Sandwhich Form
+let sandwichForm = document.querySelector('#sandwichForm');
 let ingredients = document.querySelectorAll('#sandwichForm .ingredients');
-// for(let item of ingredients){
-//     console.log(item.id);
-// }
+
 sandwichForm.addEventListener('submit', function(event){
     event.preventDefault();
     let myIngredients =[];
@@ -21,7 +21,6 @@ sandwichForm.addEventListener('submit', function(event){
     for(let i = 0; i < ingredients.length; i++){
         if(ingredients[i].checked === true){
             myIngredients.push(ingredients[i].id)
-            // console.log(ingredients[i].id)
         } 
     }
     let str2 = myIngredients.join(", ")
@@ -35,4 +34,17 @@ sandwichForm.addEventListener('submit', function(event){
 })
 
 
+//Haircut Scheduler
+let hairCutForm = document.querySelector('#haircutScheduler');
+let hairCutDate = document.querySelector('#date');
+let hairCutter = document.querySelector('#hairCutter');
+
+let hairLengthLabel = document.querySelector('#hairLengthLabel');
+hairLengthLabel.style.fontWeight ="bold";
+//hairLengthLabel.style.textDecoration ="underline";
+
+hairCutForm.addEventListener('submit', function(event){
+    event.preventDefault();
+
+})
 
