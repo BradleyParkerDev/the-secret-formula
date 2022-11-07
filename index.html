@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
+        <h3>The Alerter</h3>
         <form id="alertForm">
             <label>Alert Text</label>
             <input id="alertInput" type="text" autocomplete="off">
             <input type="submit" value="Submit">
         </form>
     </div>
-    
+    <br>
+    <br>
     <div>
         <form id="sandwichForm">
-            <h3>Sandwich Ingredients</h3>
+            <h3>Sandwich Builder</h3>
+            <label id="ingredientsLabel">Sandwich Ingredients:</label>
                 <div>
                     <label>Turkey</label>
                     <input class="ingredients" id="turkey" type="checkbox">
@@ -61,6 +65,8 @@
                 <input type="submit" value="Submit">
         </form>
     </div>
+    <br>
+    <br>
     <div>
         <form id="haircutScheduler">
             <h3>Haircut Appointment Scheduler</h3>
@@ -70,7 +76,7 @@
             </div>
             <div>
                 <label>Hair Cutter</label>
-                <input id="hairCutter" type="text">
+                <input id="hairCutter" type="text" autocomplete="off">
             </div>
             <div>
                 <label id="hairLengthLabel">Hair Length:</label>

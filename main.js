@@ -38,13 +38,23 @@ sandwichForm.addEventListener('submit', function(event){
 let hairCutForm = document.querySelector('#haircutScheduler');
 let hairCutDate = document.querySelector('#date');
 let hairCutter = document.querySelector('#hairCutter');
-
+let shortHairRadio = document.querySelector('#shortHair');
+let longHairRadio = document.querySelector('#longHair');
+let hairLength = '';
 let hairLengthLabel = document.querySelector('#hairLengthLabel');
 hairLengthLabel.style.fontWeight ="bold";
-//hairLengthLabel.style.textDecoration ="underline";
 
 hairCutForm.addEventListener('submit', function(event){
     event.preventDefault();
-
+    if(shortHairRadio.checked === true){
+        hairLength = 'short';
+    }
+    else if(longHairRadio.checked === true){
+        hairLength = 'long';
+    }
+    alert(`Haircut scheduled for ${hairCutDate.value}, with ${hairCutter.value}, for ${hairLength} hair.`);
+    hairCutDate.value = '';
+    hairCutter.value = '';
+    longHairRadio.checked = true;
 })
 
