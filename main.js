@@ -68,6 +68,11 @@ let passwordTwo = document.querySelector('#password-2');
 
 createAccountForm.addEventListener('submit',function(event){
     event.preventDefault();
+    alert(`Username: ${userName.value}  |  Email: ${email.value}`)
+    userName.value = '';
+    email.value = '';
+    passwordOne.value = '';
+    passwordTwo.value = '';
 })
 
 
